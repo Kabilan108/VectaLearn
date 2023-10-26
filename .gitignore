@@ -36,6 +36,9 @@ volumes/
 # User uploads
 uploads/
 
+# Database
+db/
+
 # Next.js
 .next
 out/
