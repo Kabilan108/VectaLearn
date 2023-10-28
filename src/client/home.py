@@ -10,7 +10,7 @@ st.set_page_config(
 st.write("# Welcome to VectaLearn! 👋")
 
 st.markdown(
-"""\
+    """\
 VectaLearn is a web app that helps you study for classes by givning you
 an AI-powered study and research assistant.
 """
