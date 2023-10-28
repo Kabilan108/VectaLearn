@@ -7,6 +7,10 @@ package-lock.json
 dist/
 build/
 
+# External libraries
+lib/
+libs/
+
 # Logs
 *.log
 npm-debug.log*
@@ -69,6 +73,3 @@ db.sqlite3
 # OS-specific
 .DS_Store
 Thumbs.db
-
-# Poetry
-poetry.lock
