@@ -10,8 +10,7 @@ from llama_index.llms.base import (
     CompletionResponseGen,
 )
 
-from typing import List, Optional, Tuple, Union, Sequence, Any
-from datetime import datetime
+from typing import Any, Sequence
 
 
 class SmithOpenAI(OpenAI):
