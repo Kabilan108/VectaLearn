@@ -11,10 +11,5 @@ class _Settings(_BaseSettings):
 
     WHISPER_MODEL: str
 
-    LANGCHAIN_TRACING_V2: bool
-    LANGCHAIN_ENDPOINT: str
-    LANGCHAIN_API_KEY: str
-    LANGCHAIN_PROJECT: str
-
 
 settings = _Settings()
