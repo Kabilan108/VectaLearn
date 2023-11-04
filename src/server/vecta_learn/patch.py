@@ -14,6 +14,7 @@ def _patch_completion(original_completion: Callable) -> Callable:
     def new_completion(*args, **kwargs):
         headers = kwargs.get("headers", {})
         headers["Helicone-Auth"] = f"Bearer {settings.HELICONE_API_KEY}"
+        headers["Helicone-Property-Project"] = settings.PROJECT_NAME
         kwargs["headers"] = headers
         return original_completion(*args, **kwargs)
 
