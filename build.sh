@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# Download Whisper.cpp
-wget https://github.com/ggerganov/whisper.cpp/archive/refs/tags/v1.4.0.tar.gz
-tar -xzf v1.4.0.tar.gz -C ./libs/
-rm v1.4.0.tar.gz
+# TODO:
+#   - cuda, cudnn should be available for whsiper
+#   - install tesseract-ocr
+#   - install poetry
+#   - install poetry dependencies
+pip install --upgrade huggingface_hub
+huggingface-cli login --token "${HUGGINGFACE_TOKEN}"
 
-# Build Whisper.cpp
-cd ./libs/whisper.cpp-1.4.0
-WHISPER_CUBLAS=1 make -j
-cd ../..
+# Download Whisper model
+huggingface-cli download "openai/whisper-small.en" \
+    --local-dir models/whisper-small.en \
+    --local-dir-use-symlinks False
