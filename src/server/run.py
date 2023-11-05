@@ -2,13 +2,13 @@
 
 import uvicorn
 
-from . import settings
-from .api.main import app
+from server import settings
 
 
 if __name__ == "__main__":
     uvicorn.run(
-        app,
+        "server.api.main:app",
         host=settings.API_HOST,
         port=settings.API_PORT,
+        reload=settings.API_RELOAD,
     )
