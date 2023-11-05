@@ -13,7 +13,7 @@ from datetime import datetime, timedelta
 from typing import List, Optional, Tuple
 from pathlib import Path
 
-from ..schema import TimeStamp
+from ..schema.whisper import TimeStamp
 from .. import settings
 
 
