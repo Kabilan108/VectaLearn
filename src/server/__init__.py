@@ -14,6 +14,8 @@ class _Settings(_BaseSettings):
 
     PROJECT_NAME: str
 
+    CLIENT_URL: str
+
     OPENAI_API_KEY: str
     HELICONE_API_KEY: str
 
