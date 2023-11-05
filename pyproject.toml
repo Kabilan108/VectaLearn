@@ -27,6 +27,8 @@ llama-hub = "^0.0.41"
 tiktoken = "^0.5.1"
 accelerate = "^0.24.1"
 optimum = "^1.13.3"
+supabase = "^2.0.3"
+vecs = "^0.4.1"
 
 
 [tool.poetry.group.dev.dependencies]
