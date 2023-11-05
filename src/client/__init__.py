@@ -8,5 +8,15 @@ class _Settings(_BaseSettings):
 
     STREAMLIT_DEBUG: bool
 
+    API_BASE: str
+
+    SUPABASE_URL: str
+    SUPABASE_KEY: str
+
+    def get_endpoint(self, endpoint: str) -> str:
+        """Get the full endpoint URL."""
+
+        return f"{self.API_BASE}{endpoint}"
+
 
 settings = _Settings()
